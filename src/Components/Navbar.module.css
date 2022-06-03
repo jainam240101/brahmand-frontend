@@ -1,0 +1,28 @@
+.Container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(49, 67, 115, 0.15) 100%);
+    z-index: 100;
+    display: flex;
+    padding:2% 7%;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 180px;
+}
+
+.Links{
+    display: flex;
+}
+.link{
+    font-family: 'Roboto', sans-serif;
+    color: #E2C45B;
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}

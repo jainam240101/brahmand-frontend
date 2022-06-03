@@ -1,0 +1,124 @@
+.Container{
+    background-color: #1A2940;
+    position: relative;
+    min-height: 100vh;
+}
+
+.starDust{
+    position: absolute;
+    top:0;
+    left:16%;
+    z-index: 50;
+    width: 70%;
+    /* height: 100%; */
+}
+.stars{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-size: cover;
+}
+.stars2{
+    width: 100%;
+    margin-top: 10%;
+    background-size: cover;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    color:#F5F5F5;
+    font-weight: 600;
+    font-size: 18px;
+    display:  flex;
+    align-items: center;
+}
+.text div{
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+}
+.Join{
+    position: absolute;
+    top:16%;
+    left:13%;
+}
+
+.Watch{
+    position: absolute;
+    top: 27%;
+    left: 24%;
+}
+
+.Buy{
+    position: absolute;
+    top: 34%;
+    left: 48%;
+}
+
+.Download{
+    position: absolute;
+    top: 26%;
+    left: 71%;
+}
+
+.About{
+    position: absolute;
+    top: 16%;
+    left: 81%;
+}
+
+.heading{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -10%;
+    text-align: center;
+    font-size: 41px;
+    font-weight: 400;
+}
+.Body{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    padding: 0 25%;    
+    font-size: 18px;
+    font-weight: 200;
+    line-height:31px;
+}
+
+.Footer{
+    font-family: 'Roboto', sans-serif;
+    color: #E2C45B;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top:5% ;
+    padding-bottom:3%;
+    padding-left:4%;
+}
+
+
+@media screen and (min-width:1550px) {
+    .Join{
+        top:19%;
+        left:15%;
+    }
+    .Watch {
+        position: absolute;
+        top: 32%;
+        left: 26%;
+    }
+    .Buy {
+        top:40%;
+        left: 49%;
+    }
+    .Download {
+        top: 30%;
+        left: 71%;
+    }
+    .About {
+        top: 18%;
+        left: 81%;
+    }
+}

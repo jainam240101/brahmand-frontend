@@ -1,0 +1,32 @@
+.Home{
+    background: url("../../assets/LandingPage/LandingPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Logo{
+    margin-top: 7%;
+}
+
+.enterbtn{
+    margin-top:3%;
+}
+
+.socials{
+    margin-top:3%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 13%;
+}
+
+.socials img{
+    width: 30px;
+}
