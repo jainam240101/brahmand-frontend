@@ -124,7 +124,10 @@
 }
 
 /* L Large Laptop */
-@media screen and (max-width:1440px){
+@media screen and (min-width:1440px) and (-webkit-min-device-pixel-ratio: 2){
+    .starDust{
+        display: none;
+    }
     .Watch{
         top:26%;
     }
