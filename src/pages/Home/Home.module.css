@@ -99,46 +99,26 @@
 }
 
 
-@media screen and (min-width:1550px) {
+@media screen and (min-width:1550px) and (max-width:1920px) {
     .Join{
-        top:19%;
-        left:15%;
+        top:18%;
+        left:14%;
     }
     .Watch {
-        position: absolute;
-        top: 32%;
+        top: 30%;
         left: 26%;
     }
     .Buy {
-        top:40%;
-        left: 49%;
+        top:37%;
+        left: 48.5%;
     }
     .Download {
-        top: 30%;
+        top: 28%;
         left: 71%;
     }
     .About {
-        top: 18%;
+        top: 17%;
         left: 81%;
-    }
-}
-
-/* L Large Laptop */
-@media screen and (min-width:1440px) and (-webkit-min-device-pixel-ratio: 2){
-    /* .starDust{
-        display: none;
-    } */
-    .Watch{
-        top:26%;
-    }
-    .Buy{
-        top:33%;
-    }
-    .Download{
-        top:25%;
-    }
-    .About{
-        top:15%;
     }
 }
 
@@ -154,6 +134,7 @@
     }
 
     .Buy {
+        display: none;
         top: 30%;
     }
 
@@ -163,33 +144,5 @@
 
     .About {
         top: 14%;
-    }
-}
-
-/* Big Monitors  */
-@media screen and (max-width:2880px){
-    .starDust{
-        display: none;
-    }
-    .text{
-        font-size: 25px;
-    }
-    .Join {
-        top:22%;
-    }
-
-    .Watch {
-        top: 37%;
-    }
-
-    .Buy {
-        top: 47%;
-    }
-
-    .Download {
-        top: 35%;
-    }
-    .About {
-        top: 22%;
     }
 }
