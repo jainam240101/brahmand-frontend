@@ -3,16 +3,17 @@
 import React from "react";
 import classes from "./Home.module.css";
 import Stardust from "../../assets/Home/Stardust.png";
-import Stars from "../../assets/Home/Stars.png";
+import Stars from "../../assets/Home/Stars.svg";
 import Navbar from "../../Components/Navbar";
 
 const Home = () => {
   return (
     <div className={classes.Container}>
       <Navbar />
+      <div className={classes.BrahmandLogo}>BRAHMAND</div>
       <img className={classes.starDust} src={Stardust} alt='home' />
       <img className={classes.stars} src={Stars} alt='home' />
-      <img className={classes.stars2} src={Stars} alt='home' />
+      <div className={classes.spacing} />
       <div className={[classes.text, classes.Join].join(" ")}>
         <div></div>
         Join Community

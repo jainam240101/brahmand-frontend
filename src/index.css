@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face{
+  font-family: "Futura";
+  src:url("./assets/futur.ttf");
+  src:url("./assets/futura_light_bt.ttf");
+  src:url("./assets/Futura_Light_font.ttf");
+  src:url("./assets/futura_medium_bt.ttf");
+}
+
+@font-face{
+  font-family: "Chewer";
+  src:url("./assets/Chewer.ttf")
+}
+
 *{
   box-sizing: border-box;
   padding:0;

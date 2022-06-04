@@ -15,14 +15,9 @@
 .stars{
     width: 100%;
     position: absolute;
-    top:0;
+    top:-15%;
     left:0;
-    background-size: cover;
-}
-.stars2{
-    width: 100%;
-    margin-top: 10%;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .text{
@@ -98,8 +93,33 @@
     padding-left:4%;
 }
 
+.BrahmandLogo{
+    position: absolute;
+    top:11%;
+    left:34%;
+    z-index: 100;
+    font-family: 'Chewer';
+    font-weight: 400;
+    font-size: 85px;
+    font-stretch: extra-ex;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #E4D49B;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #BAA044 0%, rgba(186, 160, 68, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transform: rotate(-0.22deg);
+}
 
-@media screen and (min-width:1550px) and (max-width:1920px) {
+.spacing{
+    padding-top: 55%;
+}
+
+@media screen and (min-width:1580px) and (max-width:1920px) {
     .Join{
         top:18%;
         left:14%;
@@ -123,26 +143,52 @@
 }
 
 /* 13 inches */
-@media screen and (max-width:1280px)  {
+@media screen and (max-width:1400px)  {
     .Join {
         top: 14%;
         left: 12%;
     }
-    
+    .BrahmandLogo{
+        left:32%;
+        font-size: 80px;
+    }
     .Watch {
         top: 24%;
+        left: 23%;
     }
-
     .Buy {
-        display: none;
         top: 30%;
     }
-
     .Download {
         top: 23%;
     }
-
     .About {
         top: 14%;
+    }
+}
+
+
+@media screen and (min-width:1920px) {
+    .BrahmandLogo{
+        top:15%;
+        left:35%;
+        font-size: 100px;
+    }
+    .Join{
+        top:19%;
+        left:15.5%;
+    }
+    .Watch{
+        top:32%;
+    }
+    .Buy{
+        top:40%;
+    }
+    .Download{
+        top:30%;
+    }
+    .About{
+        top:19%;
+        left:80%;
     }
 }
