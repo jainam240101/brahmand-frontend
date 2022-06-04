@@ -167,7 +167,7 @@
 }
 
 /* Big Monitors  */
-@media screen and (min-width:2560px){
+@media screen and (min-width:2880px){
     .text{
         font-size: 25px;
     }
