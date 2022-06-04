@@ -6,7 +6,7 @@
     background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(49, 67, 115, 0.15) 100%);
     z-index: 100;
     display: flex;
-    padding:2% 7%;
+    padding:2% 21%;
     justify-content: space-between;
 }
 
@@ -20,7 +20,7 @@
 .link{
     font-family: 'Roboto', sans-serif;
     color: #E2C45B;
-    margin-right: 25px;
+    margin-left: 50px;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
