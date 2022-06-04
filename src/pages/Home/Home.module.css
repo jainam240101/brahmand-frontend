@@ -168,6 +168,9 @@
 
 /* Big Monitors  */
 @media screen and (min-width:2880px){
+    .starDust{
+        display: none;
+    }
     .text{
         font-size: 25px;
     }
