@@ -1,0 +1,150 @@
+.Container{
+    background-color: #1A2940;
+    padding-top: 6%;
+}
+
+.HeroSection{
+   background-image: url("../../assets/About/HeroImage.png");
+   background-position: center center; 
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5% 0;
+}
+
+.Heading{
+    font-family: 'Chewer';
+    font-weight: 400;
+    font-size: 60px;
+    font-stretch: extra-ex;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #E4D49B;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #BAA044 0%, rgba(186, 160, 68, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transform: rotate(-0.22deg);
+}
+
+.subHeading{
+    color: #BAA044;
+    font-family: 'Futura';
+    margin-top: 1%;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.Group{
+    margin-top: 2%;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Futura';
+    color:white;
+}
+
+.Group div{
+    margin-left:20px;
+}
+
+.Line{
+    margin-top: 1%;
+}
+
+.btnGroup{
+    display: flex;
+    color:white;
+    margin-top: 1%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.DownloadPaper{
+    display: flex;
+    align-items: center;
+}
+
+.DownloadPaper span{
+    margin-right: 10px;
+}
+.playVideo span{
+    margin-left: 10px;
+}
+
+.playVideo{
+    margin-left:40px;
+    display: flex;
+    align-items: center;
+}
+
+.Header{
+    font-family: 'Chewer';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    margin-top:3%;
+    color: #F5F5F5;
+}
+
+.Header2{
+    margin-top:2%;
+    font-family: 'Futura';
+    color: #F5F5F5;
+    padding:0 30%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.Network{
+    margin-top:5%;
+    margin-left:-50px;
+    margin-bottom:10px;
+    color:#F5F5F5;
+    display: flex;
+    justify-content: center;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-weight: 20px;
+}
+
+.Compass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Compass img{
+    width: 40%;
+}
+
+.IP{
+    margin-right:20px;
+    color:#F5F5F5;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-weight: 20px;
+}
+
+.world{
+    margin-left:20px;
+    color:#F5F5F5;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-weight: 20px;
+}
+
+.Genesis{
+    color:#F5F5F5;
+    display: flex;
+    margin-top:10px;
+    margin-left:-50px;
+    justify-content: center;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-weight: 20px;
+}

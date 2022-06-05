@@ -4,10 +4,11 @@ import React from "react";
 import TopContainer from "./Components/TopContainer";
 import classes from "./Home.module.css";
 
+
 const Home = () => {
   return (
     <div className={classes.Container}>
-      <TopContainer />
+      <TopContainer/>
       <div className={classes.heading}>Lorem Ipsum Lorem Ipsum.....</div>
       <div className={classes.Body}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dolor
