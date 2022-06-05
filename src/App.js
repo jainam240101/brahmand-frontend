@@ -7,13 +7,14 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import Navbar from "./Components/Navbar/Navbar";
 import About from "./pages/About/About";
 import Footer from "./Components/Footer/Footer";
+import FAQ from "./pages/FAQ/FAQ";
 
 const Layout = ({ Component, showFooter = true }) => {
   return (
     <>
       <Navbar />
       <Component />
-      {Footer && <Footer />}
+      {showFooter && <Footer />}
     </>
   );
 };
@@ -27,6 +28,7 @@ const App = () => {
         element={<Layout Component={Home} showFooter={false} />}
       />
       <Route path='/about' element={<Layout Component={About} />} />
+      <Route path='/faq' element={<Layout Component={FAQ} />} />
     </Routes>
   );
 };

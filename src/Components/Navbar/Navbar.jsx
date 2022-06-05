@@ -8,20 +8,20 @@ import classes from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <div className={classes.Container}>
-      <div className={classes.logo}>
+      <Link to='/home' className={classes.logo}>
         <img src={Logo} alt='Logo' />
-      </div>
+      </Link>
       <div className={classes.Links}>
-        <Link to='/' className={classes.link}>
+        <Link to='/home' className={classes.link}>
           <div>Home</div>
         </Link>
-        <Link to='/' className={classes.link}>
+        <Link to='/about' className={classes.link}>
           <div>About</div>
         </Link>
-        <Link to='/' className={classes.link}>
+        <Link to='/documents' className={classes.link}>
           <div>Documents</div>
         </Link>
-        <Link to='/' className={classes.link}>
+        <Link to='/faq' className={classes.link}>
           <div>FAQ</div>
         </Link>
       </div>

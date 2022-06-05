@@ -1,0 +1,72 @@
+.Container{
+    background: #1A2940;
+    padding-top: 13%;
+    padding-left: 10%;
+}
+
+.Heading{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #BAA044;
+}
+
+.Flex{
+    display: flex;
+    align-items: center;
+}
+
+.Socials{
+    margin-left:25%;
+    text-align: center;
+}
+
+.Socials div img{
+    margin-right:25px;
+}
+.Socials div{
+    font-family: 'Futura';
+    font-weight: 500;
+    font-size: 20px;
+    padding-top:15px;
+    color: #BAA044BF;
+}
+
+.FAQs{
+    display: flex;
+    margin-top: 2%;
+}
+
+.AccordionElements{
+    display: flex;
+    margin-top:3%;
+    flex-direction: column;
+}
+
+
+.Accordion{
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PlusIcon{
+    margin-left: 200px;
+}
+
+.Question{
+    margin-left:-3.5%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Question div{
+    margin-left: 3%;
+    font-family: "Futura";
+    font-weight: 500;
+    font-size: 20px;
+    color: #F5F5F5;
+}
