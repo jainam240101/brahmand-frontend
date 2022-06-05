@@ -6,9 +6,7 @@
     background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(49, 67, 115, 0.15) 100%);
     z-index: 100;
     display: flex;
-    padding:2% 0%;
-    padding-left: 21%; 
-    padding-right: 19%; 
+    padding:2% 20%;
     justify-content: space-between;
 }
 

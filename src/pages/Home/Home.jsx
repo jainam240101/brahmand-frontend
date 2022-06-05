@@ -11,26 +11,34 @@ const Home = () => {
     <div className={classes.Container}>
       <Navbar />
       <div className={classes.BrahmandLogo}>BRAHMAND</div>
-      <img className={classes.starDust} src={Stardust} alt='home' />
+      <div className={classes.starDust}>
+        <img src={Stardust} alt='home' />
+      </div>
       <img className={classes.stars} src={Stars} alt='home' />
       <div className={classes.spacing} />
-      <div className={[classes.text, classes.Join].join(" ")}>
-        <div></div>
-        Join Community
+      <div className={classes.textLayer1}>
+        <div className={classes.textWrap}>
+          <div className={classes.dot} />
+          <div className={classes.text}>Join Community</div>
+        </div>
+        <div className={classes.textWrap}>
+          <div className={classes.dot} />
+          <div className={classes.text}>About Game</div>
+        </div>
       </div>
-      <div className={[classes.text, classes.Watch].join(" ")}>
-        <div></div>
-        Watch Trailer
+      <div className={classes.textLayer2}>
+        <div className={classes.textWrap}>
+          <div className={classes.dot} />
+          <div className={classes.text}>Watch Trailer</div>
+        </div>
+        <div className={classes.textWrap}>
+          <div className={classes.dot} />
+          <div className={classes.text}>Download Litepaper</div>
+        </div>
       </div>
-      <div className={[classes.text, classes.Buy].join(" ")}>
-        <div></div>Buy NFT
-      </div>
-      <div className={[classes.text, classes.Download].join(" ")}>
-        <div></div>
-        Download Litepaper
-      </div>
-      <div className={[classes.text, classes.About].join(" ")}>
-        <div></div>About Game
+      <div className={classes.textLayer3}>
+        <div className={classes.dot} />
+        <div className={classes.text}>Buy NFT</div>
       </div>
       <div className={classes.heading}>Lorem Ipsum Lorem Ipsum.....</div>
       <div className={classes.Body}>
