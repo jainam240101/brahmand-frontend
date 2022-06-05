@@ -1,0 +1,130 @@
+.starDust {
+    position: absolute;
+    top: 0;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    /* height: 100%; */
+}
+
+.starDust img {
+    width: 70%;
+}
+
+.stars {
+    width: 100%;
+    position: absolute;
+    top: -15%;
+    left: 0;
+    /* background-size: cover; */
+}
+
+.BrahmandLogo {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    font-family: 'Chewer';
+    font-weight: 400;
+    font-size: 85px;
+    font-stretch: extra-ex;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #E4D49B;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #BAA044 0%, rgba(186, 160, 68, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transform: rotate(-0.22deg);
+}
+
+.TextInsideGlobe {
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+    font-family: "Futura";
+    font-weight: 500;
+    font-size: 18px;
+    color: #F5F5F5;
+    padding: 0 32%;
+    z-index: 100;
+}
+
+.spacing {
+    padding-top: 55%;
+}
+
+.textLayer1 {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    padding: 0% 12%;
+    justify-content: space-between;
+}
+
+.textLayer2 {
+    position: absolute;
+    top: 27%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    padding-left: 23%;
+    padding-right: 17%;
+    justify-content: space-between;
+}
+
+.textLayer3 {
+    position: absolute;
+    top: 34%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    background: #F5F5F5;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+
+.text {
+    font-size: 18px;
+    font-family: "Futura";
+    font-weight: 500;
+    margin-left: 10px;
+    color: #F5F5F5;
+}
+
+.textWrap {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:1550px) and (max-width:1960px) {
+    .textLayer1 {
+        padding-right: 12%;
+        padding-left: 11%;
+    }
+
+    .textLayer2 {
+        padding-left: 21%;
+    }
+
+    .textLayer3 {
+        top: 36.5%;
+    }
+}
