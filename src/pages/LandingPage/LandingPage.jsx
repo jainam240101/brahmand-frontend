@@ -2,7 +2,7 @@
 
 import React from "react";
 import classes from "./LandingPage.module.css";
-import Logo from "../../assets/LandingPage/Logo.svg";
+import Logo from "../../assets/LandingPage/Logo.png";
 import Primary from "../../assets/LandingPage/Primary.svg";
 import Discord from "../../assets/LandingPage/Discord.svg";
 import Telegram from "../../assets/LandingPage/Telegram.svg";

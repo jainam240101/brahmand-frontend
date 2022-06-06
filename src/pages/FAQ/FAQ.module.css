@@ -2,6 +2,7 @@
     background: #1A2940;
     padding-top: 13%;
     padding-left: 10%;
+    padding-right: 5%;
 }
 
 .Heading{
@@ -18,7 +19,6 @@
 }
 
 .Socials{
-    margin-left:25%;
     text-align: center;
 }
 
@@ -35,7 +35,25 @@
 
 .FAQs{
     display: flex;
+    /* background-color: aqua; */
+    width: 55%;
     margin-top: 2%;
+}
+
+.Answer{
+    width: 40%;
+    font-family: 'Futura';
+    /* font-weight: 500; */
+    color: #F5F5F5;
+}
+
+.FAQ_Question{
+    font-weight: 500;
+    font-size: 20px;
+}
+.FAQ_Answer{
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .AccordionElements{
@@ -54,6 +72,7 @@
 
 .PlusIcon{
     margin-left: 200px;
+    cursor: pointer;
 }
 
 .Question{
@@ -66,6 +85,7 @@
 .Question div{
     margin-left: 3%;
     font-family: "Futura";
+    opacity: 0.8;
     font-weight: 500;
     font-size: 20px;
     color: #F5F5F5;

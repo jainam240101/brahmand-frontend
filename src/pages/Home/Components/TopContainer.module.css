@@ -54,6 +54,7 @@
     font-size: 18px;
     color: #F5F5F5;
     padding: 0 32%;
+    opacity: 0.8;
     z-index: 100;
 }
 
@@ -114,8 +115,9 @@
     align-items: center;
 }
 
-@media screen and (min-width:1550px) and (max-width:1960px) {
+@media screen and (max-width:1960px) and (-webkit-min-device-pixel-ratio: 2) {
     .textLayer1 {
+        /* display: none; */
         padding-right: 12%;
         padding-left: 11%;
     }
@@ -126,5 +128,22 @@
 
     .textLayer3 {
         top: 36.5%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .textLayer1 {
+        padding-right: 15%;
+        padding-left: 14%;
+        top:19%;
+    }
+    .textLayer2 {
+        padding-left: 25%;
+        padding-right: 21%;
+        top: 32%;
+    }
+
+    .textLayer3 {
+        top: 40%;
     }
 }

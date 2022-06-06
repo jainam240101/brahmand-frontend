@@ -13,6 +13,7 @@
 
 .Logo{
     margin-top: 7%;
+    filter: saturate(150%)
 }
 
 .enterbtn{
@@ -23,7 +24,6 @@
     margin-top:3%;
     display: flex;
     justify-content: space-between;
-    /* background-color: aqua; */
     width: 13%;
 }
 

@@ -17,7 +17,24 @@
 .Links{
     display: flex;
 }
-.link{
+.Links a{
+    
+    text-decoration: none;
+}
+
+.active{
+    font-family: 'Futura';
+    color: #E2C45B;
+    border-bottom: 1px solid #E2C45B;   
+    margin-left:25px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.inactive{
     font-family: 'Futura';
     color: #E2C45B;
     margin-left:25px;
