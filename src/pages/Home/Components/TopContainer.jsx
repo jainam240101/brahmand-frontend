@@ -6,11 +6,18 @@ import Stardust from "../../../assets/Home/Stardust.png";
 import Stars from "../../../assets/Home/Stars.svg";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/LandingPage/Logo.png";
+import { useLocation } from "react-router-dom";
+
+const HtmlDiv = ({ children, ...props }) => <div {...props}>{children}</div>;
 
 const TopContainer = () => {
+  const { state } = useLocation();
+
+  const DivComp = state?.animate ? motion.div : HtmlDiv;
+
   return (
     <>
-      <motion.div
+      <DivComp
         initial={{ opacity: 0, y: "30%" }}
         animate={{
           opacity: [0, 1],
@@ -21,10 +28,11 @@ const TopContainer = () => {
           delay: 6,
           ease: "easeInOut",
         }}
-        className={classes.BrahmandLogo}>
-        <img src={Logo} alt='Logo' />
-      </motion.div>
-      <motion.div
+        className={classes.BrahmandLogo}
+      >
+        <img src={Logo} alt="Logo" />
+      </DivComp>
+      <DivComp
         initial={{ opacity: 0, y: "20%" }}
         animate={{
           opacity: [0, 0.6],
@@ -35,14 +43,15 @@ const TopContainer = () => {
           delay: 9,
           ease: "easeInOut",
         }}
-        className={classes.TextInsideGlobe}>
+        className={classes.TextInsideGlobe}
+      >
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
-      </motion.div>
+      </DivComp>
       {/* <div className={classes.TextInsideGlobe}></div> */}
-      <motion.div
+      <DivComp
         initial={{ opacity: 0, y: "-50%" }}
         animate={{
           opacity: [0, 1],
@@ -53,18 +62,20 @@ const TopContainer = () => {
           duration: 4,
           ease: "easeOut",
         }}
-        className={classes.starDust}>
-        <img src={Stardust} alt='home' />
-      </motion.div>
-      <motion.div
+        className={classes.starDust}
+      >
+        <img src={Stardust} alt="home" />
+      </DivComp>
+      <DivComp
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0.45, 0.9, 1] }}
         transition={{
           // delay: 1,
           duration: 1,
-        }}>
-        <img className={classes.stars} src={Stars} alt='home' />
-      </motion.div>
+        }}
+      >
+        <img className={classes.stars} src={Stars} alt="home" />
+      </DivComp>
       <div className={classes.spacing} />
       <AnimatedText className={classes.textLayer1}>
         <div className={classes.textWrap}>
@@ -96,8 +107,12 @@ const TopContainer = () => {
 };
 
 const AnimatedText = ({ className, children }) => {
+  const { state } = useLocation();
+
+  const DivComp = state?.animate ? motion.div : HtmlDiv;
+
   return (
-    <motion.div
+    <DivComp
       initial={{ opacity: 0, y: "20%" }}
       animate={{
         opacity: [0, 0.8],
@@ -108,9 +123,10 @@ const AnimatedText = ({ className, children }) => {
         delay: 13,
         ease: "easeInOut",
       }}
-      className={className}>
+      className={className}
+    >
       {children}
-    </motion.div>
+    </DivComp>
   );
 };
 

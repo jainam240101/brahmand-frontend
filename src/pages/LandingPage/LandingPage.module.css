@@ -1,32 +1,38 @@
-.Home{
-    background: url("../../assets/LandingPage/LandingPage.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.HeroSection {
+  background-color: #1a2940;
+  position: relative;
+  min-height: 100vh;
 }
 
-.Logo{
-    margin-top: 7%;
-    filter: saturate(150%)
+.Home {
+  background: url("../../assets/LandingPage/LandingPage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.enterbtn{
-    margin-top:3%;
+.Logo {
+  margin-top: 7%;
+  filter: saturate(150%);
 }
 
-.socials{
-    margin-top:3%;
-    display: flex;
-    justify-content: space-between;
-    width: 13%;
+.enterbtn {
+  margin-top: 3%;
 }
 
-.socials img{
-    width: 30px;
+.socials {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 13%;
+}
+
+.socials img {
+  width: 30px;
 }
