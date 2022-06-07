@@ -25,7 +25,9 @@ const App = () => {
       <Route path='/' element={<LandingPage />} />
       <Route
         path='/home'
-        element={<Layout Component={Home} showFooter={false} />}
+        element={
+          <Layout Component={Home} showFooter={false} />
+        }
       />
       <Route path='/about' element={<Layout Component={About} />} />
       <Route path='/faq' element={<Layout Component={FAQ} />} />

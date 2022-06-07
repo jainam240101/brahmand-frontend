@@ -25,23 +25,12 @@
     position: absolute;
     top: 10%;
     width: 100%;
+    padding-left: 1%;
     text-align: center;
     z-index: 100;
-    font-family: 'Chewer';
-    font-weight: 400;
-    font-size: 85px;
-    font-stretch: extra-ex;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #E4D49B;
-    text-align: center;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #BAA044 0%, rgba(186, 160, 68, 0) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    transform: rotate(-0.22deg);
+}
+.BrahmandLogo img{
+    width: 38%;
 }
 
 .TextInsideGlobe {
@@ -54,8 +43,8 @@
     font-size: 18px;
     color: #F5F5F5;
     padding: 0 32%;
-    opacity: 0.8;
     z-index: 100;
+    /* display: none; */
 }
 
 .spacing {
@@ -64,18 +53,19 @@
 
 .textLayer1 {
     position: absolute;
-    top: 16%;
+    top: 15%;
     left: 0;
     width: 100%;
     display: flex;
     /* background-color: aqua; */
     padding: 0% 12%;
     justify-content: space-between;
+        /* display: none; */
 }
 
 .textLayer2 {
     position: absolute;
-    top: 27%;
+    top: 26%;
     left: 0;
     width: 100%;
     display: flex;
@@ -87,7 +77,7 @@
 
 .textLayer3 {
     position: absolute;
-    top: 34%;
+    top: 33%;
     left: 0;
     width: 100%;
     display: flex;
