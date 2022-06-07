@@ -4,7 +4,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import Navbar from "./Components/Navbar/Navbar";
+import NonAnimatedNavbar from "./Components/Navbar/NonAnimatedNavbar";
 import About from "./pages/About/About";
 import Footer from "./Components/Footer/Footer";
 import FAQ from "./pages/FAQ/FAQ";
@@ -12,7 +12,7 @@ import FAQ from "./pages/FAQ/FAQ";
 const Layout = ({ Component, showFooter = true }) => {
   return (
     <>
-      <Navbar />
+      {showFooter && <NonAnimatedNavbar />}
       <Component />
       {showFooter && <Footer />}
     </>

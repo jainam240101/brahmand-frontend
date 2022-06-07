@@ -18,7 +18,7 @@ const LandingPage = () => {
     setOpacity(0);
     setTimeout(() => {
       navigate("/home", { state: { animate: true } });
-    }, 4100);
+    }, 2000);
   };
 
   return (
@@ -28,7 +28,7 @@ const LandingPage = () => {
           opacity: opacity,
         }}
         transition={{
-          duration: 4,
+          duration: 2,
           ease: "easeIn",
         }}
         className={classes.Home}

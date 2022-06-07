@@ -24,6 +24,9 @@
 
 .enterbtn {
   margin-top: 3%;
+  border:0;
+  background: none;
+  cursor: pointer;
 }
 
 .socials {

@@ -8,6 +8,7 @@ import Clip from "../../assets/FAQs/Clip.svg";
 import Discord from "../../assets/FAQs/Discord.svg";
 import Telegram from "../../assets/FAQs/Telegram.svg";
 import Twitter from "../../assets/FAQs/Twitter.svg";
+import { motion } from "framer-motion";
 
 const FAQ = () => {
   const [FAQ_Data, setFAQ_Data] = useState({ question: "", answer: "" });
@@ -89,37 +90,44 @@ const FAQ = () => {
 
   return (
     <div className={classes.Container}>
-      <div className={classes.Heading}>FAQS</div>
-      <div className={classes.Flex}>
-        <div className={classes.FAQs}>
-          <div className={classes.Divider}>
-            <img src={FAQ_Bar} alt='FAQ_Bar' />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}>
+        <div className={classes.Heading}>FAQS</div>
+        <div className={classes.Flex}>
+          <div className={classes.FAQs}>
+            <div className={classes.Divider}>
+              <img src={FAQ_Bar} alt='FAQ_Bar' />
+            </div>
+            <div className={classes.AccordionElements}>
+              {data.map((element, index) => (
+                <Accordion
+                  key={index}
+                  onClick={showFaqData}
+                  question={element.question}
+                  index={index}
+                />
+              ))}
+            </div>
           </div>
-          <div className={classes.AccordionElements}>
-            {data.map((element, index) => (
-              <Accordion
-                key={index}
-                onClick={showFaqData}
-                question={element.question}
-                index={index}
-              />
-            ))}
+          <div className={classes.Answer}>
+            <div className={classes.FAQ_Question}>{FAQ_Data.question}</div>
+            <br />
+            <div className={classes.FAQ_Answer}>{FAQ_Data.answer}</div>
           </div>
         </div>
-        <div className={classes.Answer}>
-          <div className={classes.FAQ_Question}>{FAQ_Data.question}</div>
-          <br />
-          <div className={classes.FAQ_Answer}>{FAQ_Data.answer}</div>
+        <div className={classes.Socials}>
+          <div>
+            <img src={Discord} alt='Discord' />
+            <img src={Telegram} alt='Telegram' />
+            <img src={Twitter} alt='Twitter' />
+          </div>
+          <div>Join Our Community</div>
         </div>
-      </div>
-      <div className={classes.Socials}>
-        <div>
-          <img src={Discord} alt='Discord' />
-          <img src={Telegram} alt='Telegram' />
-          <img src={Twitter} alt='Twitter' />
-        </div>
-        <div>Join Our Community</div>
-      </div>
+      </motion.div>
     </div>
   );
 };

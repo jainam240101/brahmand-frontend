@@ -7,8 +7,19 @@ import Stars from "../../../assets/Home/Stars.svg";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/LandingPage/Logo.png";
 import { useLocation } from "react-router-dom";
+import Navbar from "../../../Components/Navbar/Navbar";
 
-const HtmlDiv = ({ children, ...props }) => <div {...props}>{children}</div>;
+const HtmlDiv = ({ children, ...props }) => (
+  <motion.div
+    {...props}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{
+      duration: 1,
+    }}>
+    {children}
+  </motion.div>
+);
 
 const TopContainer = () => {
   const { state } = useLocation();
@@ -17,34 +28,31 @@ const TopContainer = () => {
 
   return (
     <>
+      <Navbar />
       <DivComp
         initial={{ opacity: 0, y: "30%" }}
         animate={{
           opacity: [0, 1],
-          y: ["30%", "0%"],
         }}
         transition={{
           duration: 2,
           delay: 6,
           ease: "easeInOut",
         }}
-        className={classes.BrahmandLogo}
-      >
-        <img src={Logo} alt="Logo" />
+        className={classes.BrahmandLogo}>
+        <img src={Logo} alt='Logo' />
       </DivComp>
       <DivComp
         initial={{ opacity: 0, y: "20%" }}
         animate={{
           opacity: [0, 0.6],
-          y: ["10%", "0%"],
         }}
         transition={{
           duration: 1,
-          delay: 9,
+          delay: 8,
           ease: "easeInOut",
         }}
-        className={classes.TextInsideGlobe}
-      >
+        className={classes.TextInsideGlobe}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -62,9 +70,8 @@ const TopContainer = () => {
           duration: 4,
           ease: "easeOut",
         }}
-        className={classes.starDust}
-      >
-        <img src={Stardust} alt="home" />
+        className={classes.starDust}>
+        <img src={Stardust} alt='home' />
       </DivComp>
       <DivComp
         initial={{ opacity: 0 }}
@@ -72,9 +79,8 @@ const TopContainer = () => {
         transition={{
           // delay: 1,
           duration: 1,
-        }}
-      >
-        <img className={classes.stars} src={Stars} alt="home" />
+        }}>
+        <img className={classes.stars} src={Stars} alt='home' />
       </DivComp>
       <div className={classes.spacing} />
       <AnimatedText className={classes.textLayer1}>
@@ -113,18 +119,16 @@ const AnimatedText = ({ className, children }) => {
 
   return (
     <DivComp
-      initial={{ opacity: 0, y: "20%" }}
+      initial={{ opacity: 0 }}
       animate={{
         opacity: [0, 0.8],
-        y: ["10%", "0%"],
       }}
       transition={{
         duration: 1,
-        delay: 13,
+        delay: 10,
         ease: "easeInOut",
       }}
-      className={className}
-    >
+      className={className}>
       {children}
     </DivComp>
   );

@@ -1,14 +1,19 @@
 /** @format */
 
 import React from "react";
+import { useLocation } from "react-router-dom";
+import NonAnimatedNavbar from "../../Components/Navbar/NonAnimatedNavbar";
 import TopContainer from "./Components/TopContainer";
 import classes from "./Home.module.css";
 
-
 const Home = () => {
+  const { state } = useLocation();
+
+  const animate = state?.animate;
   return (
     <div className={classes.Container}>
-      <TopContainer/>
+      {!animate && <NonAnimatedNavbar />}
+      <TopContainer />
       <div className={classes.heading}>Lorem Ipsum Lorem Ipsum.....</div>
       <div className={classes.Body}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dolor

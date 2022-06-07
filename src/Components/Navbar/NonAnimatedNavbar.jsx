@@ -4,22 +4,11 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Navbar/Logo.svg";
 import classes from "./Navbar.module.css";
-import { motion } from "framer-motion";
 
-const Navbar = () => {
+const NonAnimatedNavbar = () => {
   const { pathname } = useLocation();
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: [0, 1],
-      }}
-      transition={{
-        delay: 8,
-        duration: 4,
-        ease: "backInOut",
-      }}
-      className={classes.Container}>
+    <div className={classes.Container}>
       <Link to='/home' className={classes.logo}>
         <img src={Logo} alt='Logo' />
       </Link>
@@ -55,8 +44,8 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
-export default Navbar;
+export default NonAnimatedNavbar;
