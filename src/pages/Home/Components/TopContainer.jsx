@@ -36,7 +36,7 @@ const TopContainer = () => {
         }}
         transition={{
           duration: 2,
-          delay: 6,
+          delay: 7,
           ease: "easeInOut",
         }}
         className={classes.BrahmandLogo}>
@@ -45,7 +45,7 @@ const TopContainer = () => {
       <DivComp
         initial={{ opacity: 0, y: "20%" }}
         animate={{
-          opacity: [0, 0.6],
+          opacity: [0, 0.8],
         }}
         transition={{
           duration: 1,
@@ -53,12 +53,8 @@ const TopContainer = () => {
           ease: "easeInOut",
         }}
         className={classes.TextInsideGlobe}>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Lorem Ipsum is simply dummy text
       </DivComp>
-      {/* <div className={classes.TextInsideGlobe}></div> */}
       <DivComp
         initial={{ opacity: 0, y: "-50%" }}
         animate={{
@@ -107,6 +103,32 @@ const TopContainer = () => {
       <AnimatedText className={classes.textLayer3}>
         <div className={classes.dot} />
         <div className={classes.text}>Buy NFT</div>
+      </AnimatedText>
+
+      {/* For Mobile Screens */}
+      <AnimatedText className={classes.mobileTextLayer1}>
+        <div>
+          <div className={classes.dot} />
+          <div className={classes.text}>Watch Trailer</div>
+        </div>
+        <div>
+          <div className={classes.dot} />
+          <div className={classes.text}>Buy NFT</div>
+        </div>
+        <div>
+          <div className={classes.dot} />
+          <div className={classes.text}>About Game</div>
+        </div>
+      </AnimatedText>
+      <AnimatedText className={classes.mobileTextLayer2}>
+        <div>
+          <div className={classes.dot} />
+          <div className={classes.text}>Join Comunity</div>
+        </div>
+        <div>
+          <div className={classes.dot} />
+          <div className={classes.text}>Download Litepaper</div>
+        </div>
       </AnimatedText>
     </>
   );

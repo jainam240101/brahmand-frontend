@@ -44,3 +44,37 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.mobileNavbar{
+    display: none;
+}
+
+@media (max-width:640px){
+    .logo{
+        display: none;
+    }
+    .Container{
+        padding: 5% 5%;
+    }
+    .Links{
+        display: none;
+    }
+    .mobileNavbar{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .BurgerIcon div{
+        height:5px;
+        background: #BAA24F;
+        width: 30px;
+        margin-bottom: 5px;
+    }
+    .signUpBtn{
+        background: linear-gradient(180deg, #BAA044 35.42%, rgba(186, 160, 68, 0.35) 100%);
+        padding:12px 20px;
+        color:white;
+        border:none;
+        font-family: "Roboto", sans-serif;
+    }
+}

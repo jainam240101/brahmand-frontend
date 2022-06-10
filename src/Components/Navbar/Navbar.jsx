@@ -1,12 +1,14 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Navbar/Logo.svg";
 import classes from "./Navbar.module.css";
 import { motion } from "framer-motion";
+import Sidebar from "./Sidebar/Sidebar";
 
 const Navbar = () => {
+  const [sidebar, setsidebar] = useState(false);
   const { pathname } = useLocation();
   return (
     <motion.div
@@ -15,12 +17,12 @@ const Navbar = () => {
         opacity: [0, 1],
       }}
       transition={{
-        delay: 8,
-        duration: 4,
+        delay: sidebar ? 0 : 8,
+        duration: sidebar ? 0 : 4,
         ease: "backInOut",
       }}
       className={classes.Container}>
-      <Link to='/home' className={classes.logo}>
+      <Link  to='/home' className={classes.logo}>
         <img src={Logo} alt='Logo' />
       </Link>
       <div className={classes.Links}>
@@ -55,6 +57,15 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
+      <div className={classes.mobileNavbar}>
+        <div onClick={() => setsidebar(true)} className={classes.BurgerIcon}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <button className={classes.signUpBtn}>Sign Up</button>
+      </div>
+      <Sidebar sideBar={sidebar} setSideBar={setsidebar} />
     </motion.div>
   );
 };

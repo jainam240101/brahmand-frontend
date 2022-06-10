@@ -41,7 +41,7 @@
     font-family: "Futura";
     font-weight: 500;
     font-size: 18px;
-    color: #F5F5F5;
+    color: #D8D7D7;
     padding: 0 32%;
     z-index: 100;
     /* display: none; */
@@ -86,7 +86,7 @@
 }
 
 .dot {
-    background: #F5F5F5;
+    background: #D8D7D7;
     height: 5px;
     width: 5px;
     border-radius: 50%;
@@ -97,12 +97,15 @@
     font-family: "Futura";
     font-weight: 500;
     margin-left: 10px;
-    color: #F5F5F5;
+    color: #D8D7D7;
 }
 
 .textWrap {
     display: flex;
     align-items: center;
+}
+.mobileTextLayer1, .mobileTextLayer2{
+    display: none;
 }
 
 @media screen and (max-width:1960px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -125,15 +128,62 @@
     .textLayer1 {
         padding-right: 15%;
         padding-left: 14%;
-        top:19%;
+        top:18%;
+        /* display: none; */
     }
     .textLayer2 {
         padding-left: 25%;
         padding-right: 21%;
-        top: 32%;
+        top: 30%;
     }
-
+    .TextInsideGlobe{
+        margin-top: 2%;
+    }
     .textLayer3 {
-        top: 40%;
+        top: 38%;
     }
+}
+
+
+@media only screen and (max-width:640px) {
+   .stars{
+       top:5%;
+   }
+   .starDust{
+       top: 3.2%;
+       z-index: 50;
+       filter: saturate(130%);
+   }
+   .starDust img {
+        width: 100%;
+   }
+   .BrahmandLogo{
+       top:5%;
+   }
+   .BrahmandLogo img {
+       width: 65%;
+   }
+   .TextInsideGlobe{
+       top:8%;
+       font-size: 16px;
+       padding: 0 30%;
+        margin: 0 2%;
+    }
+   .textLayer1 ,.textLayer2, .textLayer3{
+       display: none;
+   }
+   .mobileTextLayer1, .mobileTextLayer2 {
+       display: flex;
+       margin-top: 5%;
+       justify-content: space-around;
+       /* background-color: aquamarine; */
+   }
+   .mobileTextLayer1 div,.mobileTextLayer2 div{
+       display: flex;
+       color:#E2C45B;
+       align-items: center;
+   }
+   .dot{
+        background: #E2C45B;
+   }
 }

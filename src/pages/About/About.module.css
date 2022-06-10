@@ -46,7 +46,7 @@
     font-weight: 500;
     font-size: 20px;
     font-family: 'Futura';
-    color:white;
+    color:#D8D7D7;
 }
 
 .Group div{
@@ -60,7 +60,7 @@
 
 .btnGroup{
     display: flex;
-    color:white;
+    color:#D8D7D7;
     margin-top: 1%;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -92,14 +92,14 @@
     font-size: 25px;
     text-align: center;
     margin-top:3%;
-    color: #F5F5F5;
+    color: #D8D7D7;
     opacity: 0.8;
 }
 
 .Header2{
     margin-top:2%;
     font-family: 'Futura';
-    color: #F5F5F5;
+    color: #D8D7D7;
     padding:0 30%;
     opacity: 0.8;
     text-align: center;
@@ -107,11 +107,11 @@
     opacity: 0.8;
 }
 
-.Network{
+.IP{
     margin-top:5%;
-    margin-left:-4%;
+    margin-left:-1%;
     margin-bottom:10px;
-    color:#F5F5F5;
+    color:#D8D7D7;
     display: flex;
     justify-content: center;
     font-family: 'Futura';
@@ -130,32 +130,69 @@
     filter: saturate(120%);
 }
 
-.IP{
+.World{
     margin-right:20px;
-    color:#F5F5F5;
+    color:#D8D7D7;
     font-family: 'Futura';
     font-weight: 500;
     font-size: 20px;
     opacity: 0.8;
 }
 
-.world{
+.Network{
     margin-left:20px;
-    color:#F5F5F5;
+    color:#D8D7D7;
     font-family: 'Futura';
     opacity: 0.8;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 20px
 }
 
 .Genesis{
-    color:#F5F5F5;
+    color:#D8D7D7;
     display: flex;
     margin-top:10px;
-    margin-left:-4%;
+    margin-left:-1%;
     opacity: 0.8;
     justify-content: center;
     font-family: 'Futura';
     font-weight: 500;
     font-size: 20px;
+}
+
+@media screen and (max-width:640px){
+    .Container{
+        padding-top: 20%;
+    }
+    .Heading{
+        font-size: 50px;
+    }
+    .subHeading{
+        font-size: 30px;
+    }
+    .Header2{
+        padding: 0 2%;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+    .Compass img{
+        width: 70%;
+    }
+    .World{
+        font-size: 14px;
+        margin: 5px 0;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .Network{
+        font-size: 14px;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .IP, .Genesis{
+        font-size: 14px;
+    }
+    .Line{
+        margin: 5% 0;
+    }
 }

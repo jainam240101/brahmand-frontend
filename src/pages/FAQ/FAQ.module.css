@@ -1,8 +1,6 @@
 .Container{
     background: #1A2940;
     padding-top: 13%;
-    padding-left: 10%;
-    padding-right: 5%;
 }
 
 .Heading{
@@ -10,6 +8,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
+    display: flex;
+    justify-content: center;
     color: #BAA044;
 }
 
@@ -33,61 +33,54 @@
     color: #BAA044BF;
 }
 
-.FAQs{
-    display: flex;
-    /* background-color: aqua; */
-    width: 55%;
-    margin-top: 2%;
-}
-
-.Answer{
-    width: 40%;
-    font-family: 'Futura';
-    /* font-weight: 500; */
-    color: #F5F5F5;
-    margin-left:5%;
-}
-
-.FAQ_Question{
-    font-weight: 500;
-    font-size: 20px;
-}
-.FAQ_Answer{
-    font-weight: 300;
-    font-size: 18px;
-}
-
 .AccordionElements{
-    display: flex;
-    margin-top:3%;
-    flex-direction: column;
+    margin-top:3%;   
 }
 
-
-.Accordion{
+.AccordionContainer{
+    margin:0 27%;
+    font-family: 'Futura';
+    font-weight: 500;
+    color: #D8D7D7;
+    margin-bottom: 2%;
+}
+.topPart{
     display: flex;
-    margin-bottom: 5%;
     align-items: center;
     justify-content: space-between;
 }
-
+.Question{
+    opacity: 0.8;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+.Question div{
+    margin-left: 20px;
+}
 .PlusIcon{
-    margin-left: 200px;
+    margin-left:200px;
     cursor: pointer;
 }
 
-.Question{
-    margin-left:-3.5%;
-    display: flex;
-    align-items: center;
-    width: 100%;
+.Answer{
+    opacity: 0.8;
+    margin-top:3%;
+    margin-left:7%;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
 }
 
-.Question div{
-    margin-left: 3%;
-    font-family: "Futura";
-    opacity: 0.8;
-    font-weight: 500;
-    font-size: 20px;
-    color: #F5F5F5;
+@media screen and (max-width:640px) {
+    .Container{
+        padding-top: 25%;
+    }
+    .AccordionContainer{
+        margin: 0 4%;
+        margin-bottom: 5%;
+    }
+    .PlusIcon{
+        margin-left: 150px;
+    }
 }

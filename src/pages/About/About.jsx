@@ -46,11 +46,11 @@ const About = () => {
           vel hendrerit neque ex vitae ipsum. Nam est diam, ullamcorper sit amet
           elet finibus quis, auctor eget sapien. Praesent{" "}
         </div>
-        <div className={classes.Network}>Our Network</div>
+        <div className={classes.IP}>IP</div>
         <div className={classes.Compass}>
-          <div className={classes.IP}>IP</div>
+          <div className={classes.World}>Our World</div>
           <img src={Compass} alt='Compass' />
-          <div className={classes.world}>Our World</div>
+          <div className={classes.Network}>Our Network</div>
         </div>
         <div className={classes.Genesis}>Genesis</div>
       </motion.div>

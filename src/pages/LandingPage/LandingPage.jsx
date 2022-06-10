@@ -9,6 +9,8 @@ import Telegram from "../../assets/LandingPage/Telegram.svg";
 import Twitter from "../../assets/LandingPage/Twitter.svg";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import StarDust from "../../assets/Home/Stardust.png";
+import Stars from "../../assets/Home/Stars.svg";
 
 const LandingPage = () => {
   const [opacity, setOpacity] = React.useState(1);
@@ -23,6 +25,10 @@ const LandingPage = () => {
 
   return (
     <div className={classes.HeroSection}>
+      <div style={{ display: "none" }}>
+        <img src={StarDust} alt='StarDust' />
+        <img src={Stars} alt='Stars' />
+      </div>
       <motion.div
         animate={{
           opacity: opacity,
@@ -31,16 +37,15 @@ const LandingPage = () => {
           duration: 2,
           ease: "easeIn",
         }}
-        className={classes.Home}
-      >
-        <img className={classes.Logo} src={Logo} alt="Logo" />
+        className={classes.Home}>
+        <img className={classes.Logo} src={Logo} alt='Logo' />
         <button className={classes.enterbtn} onClick={handleClick}>
-          <img src={Primary} alt="Logo" />
+          <img src={Primary} alt='Logo' />
         </button>
         <div className={classes.socials}>
-          <img src={Twitter} alt="Twitter" />
-          <img src={Discord} alt="Discord" />
-          <img src={Telegram} alt="Telegram" />
+          <img src={Twitter} alt='Twitter' />
+          <img src={Discord} alt='Discord' />
+          <img src={Telegram} alt='Telegram' />
         </div>
       </motion.div>
     </div>

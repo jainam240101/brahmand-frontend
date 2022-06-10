@@ -1,0 +1,52 @@
+.Container{
+    position: fixed;
+    height:100%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 100;
+    background-color: #1A2940;
+}
+
+.Links {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.Links a {
+    text-decoration: none;
+}
+
+.link {
+    font-family: 'Futura';
+    color: #E2C45B;
+    margin-bottom: 25px;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.Close{
+    position: absolute;
+    top:1%;
+    font-size: 60px;
+    right:5%;
+    color:white;
+    transform: rotate(-45deg);
+}
+
+.backdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(0,0,0,0.4);
+}

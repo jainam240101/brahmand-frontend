@@ -5,7 +5,7 @@
 }
 
 .heading{
-    color:white;
+    color:#D8D7D7;
     font-family: 'Roboto', sans-serif;
     margin-top: -5%;
     text-align: center;
@@ -14,7 +14,7 @@
     opacity: 0.8;
 }
 .Body{
-    color: white;
+    color: #D8D7D7;
     font-family: 'Roboto', sans-serif;
     margin-top: 2%;
     opacity: 0.8;
@@ -32,4 +32,18 @@
     padding-top:5% ;
     padding-bottom:3%;
     padding-left:4%;
+}
+
+@media only screen and (max-width:640px){
+    .Container{
+        padding-top: 20%;
+    }
+    .heading{
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    .Body{
+        padding: 0 5%;
+        text-align: justify;
+    }
 }
