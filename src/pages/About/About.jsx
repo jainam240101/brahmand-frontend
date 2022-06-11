@@ -38,13 +38,12 @@ const About = () => {
           </div>
         </div>
         <div className={classes.Header}>
-          Pushing the Metaverse forward through
-          <br /> collaboration
+          Pushing the Metaverse forward through{" "}
+          <br className={classes.Breakline} /> collaboration
         </div>
         <div className={classes.Header2}>
           n scelerisque, tortor eget placerat euismod, mauris sem pretium nulla,
-          vel hendrerit neque ex vitae ipsum. Nam est diam, ullamcorper sit amet
-          elet finibus quis, auctor eget sapien. Praesent{" "}
+          vel hendrerit neque ex vitae ipsum. Nam est
         </div>
         <div className={classes.IP}>IP</div>
         <div className={classes.Compass}>

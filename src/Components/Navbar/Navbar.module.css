@@ -3,7 +3,7 @@
     top:0;
     left: 0;
     width: 100%;
-    background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(49, 67, 115, 0.15) 100%);
+    background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(26, 41, 64, 0.15) 70%);
     z-index: 100;
     display: flex;
     padding:2% 20%;
@@ -54,6 +54,7 @@
     }
     .Container{
         padding: 5% 5%;
+        background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(26, 41, 64, 0.15) 100%)
     }
     .Links{
         display: none;
@@ -64,17 +65,17 @@
         align-items: center;
         justify-content: space-between;
     }
-    .BurgerIcon div{
-        height:5px;
-        background: #BAA24F;
-        width: 30px;
-        margin-bottom: 5px;
+    .BurgerIcon img{
+       width: 20px;
     }
     .signUpBtn{
         background: linear-gradient(180deg, #BAA044 35.42%, rgba(186, 160, 68, 0.35) 100%);
-        padding:12px 20px;
+        padding:6px 25px;
+        border-radius: 5px;
         color:white;
         border:none;
+        font-weight: 14px;
         font-family: "Roboto", sans-serif;
+        font-weight: 300;
     }
 }

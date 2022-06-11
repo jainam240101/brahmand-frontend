@@ -3,6 +3,7 @@
 import React from "react";
 import classes from "./TopContainer.module.css";
 import Stardust from "../../../assets/Home/Stardust.png";
+import PhoneGlobe from "../../../assets/Home/PhoneGlobe.png";
 import Stars from "../../../assets/Home/Stars.svg";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/LandingPage/Logo.png";

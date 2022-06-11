@@ -6,6 +6,7 @@ import Logo from "../../assets/Navbar/Logo.svg";
 import classes from "./Navbar.module.css";
 import { motion } from "framer-motion";
 import Sidebar from "./Sidebar/Sidebar";
+import Hamburger from "../../assets/Navbar/Hamburger.svg";
 
 const Navbar = () => {
   const [sidebar, setsidebar] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
         ease: "backInOut",
       }}
       className={classes.Container}>
-      <Link  to='/home' className={classes.logo}>
+      <Link to='/home' className={classes.logo}>
         <img src={Logo} alt='Logo' />
       </Link>
       <div className={classes.Links}>
@@ -59,9 +60,7 @@ const Navbar = () => {
       </div>
       <div className={classes.mobileNavbar}>
         <div onClick={() => setsidebar(true)} className={classes.BurgerIcon}>
-          <div></div>
-          <div></div>
-          <div></div>
+          <img src={Hamburger} alt='Hamburger' />
         </div>
         <button className={classes.signUpBtn}>Sign Up</button>
       </div>

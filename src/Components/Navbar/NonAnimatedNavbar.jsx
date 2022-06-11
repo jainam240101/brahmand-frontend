@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Navbar/Logo.svg";
+import Hamburger from "../../assets/Navbar/Hamburger.svg";
 import classes from "./Navbar.module.css";
 import Sidebar from "./Sidebar/Sidebar";
 
@@ -48,9 +49,7 @@ const NonAnimatedNavbar = () => {
       </div>
       <div className={classes.mobileNavbar}>
         <div onClick={() => setsidebar(true)} className={classes.BurgerIcon}>
-          <div></div>
-          <div></div>
-          <div></div>
+          <img src={ Hamburger} alt="Hamburger"/>
         </div>
         <button className={classes.signUpBtn}>Sign Up</button>
       </div>

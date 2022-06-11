@@ -169,6 +169,18 @@
     }
     .subHeading{
         font-size: 30px;
+        margin-top: 4%;
+    }
+    .Group{
+        margin-top: 4%;
+    }
+    .Header{
+        margin-top: 5%;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .Breakline{
+        display: none;
     }
     .Header2{
         padding: 0 2%;
