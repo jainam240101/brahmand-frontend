@@ -19,12 +19,13 @@
 
 .Logo {
   margin-top: 7%;
-  filter: saturate(150%);
+  /* filter: saturate(150%); */
 }
 
 .enterbtn {
   margin-top: 3%;
   border:0;
+  opacity: 0.8;
   background: none;
   cursor: pointer;
 }

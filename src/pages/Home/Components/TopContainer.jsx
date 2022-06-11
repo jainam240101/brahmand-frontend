@@ -50,7 +50,7 @@ const TopContainer = () => {
         }}
         transition={{
           duration: 1,
-          delay: 8,
+          delay: 9,
           ease: "easeInOut",
         }}
         className={classes.TextInsideGlobe}>
@@ -148,7 +148,7 @@ const AnimatedText = ({ className, children }) => {
       }}
       transition={{
         duration: 1,
-        delay: 10,
+        delay: 11,
         ease: "easeInOut",
       }}
       className={className}>

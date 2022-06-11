@@ -1,6 +1,6 @@
 .Container{
     background: #1A2940;
-    padding-top: 13%;
+    padding-top: 10%;
 }
 
 .Heading{
@@ -42,7 +42,7 @@
     font-family: 'Futura';
     font-weight: 500;
     color: #D8D7D7;
-    margin-bottom: 2%;
+    padding-bottom: 2%;
 }
 .topPart{
     display: flex;
@@ -76,9 +76,12 @@
     .Container{
         padding-top: 25%;
     }
+    .AccordionElements{
+        margin-top: 8%;
+    }
     .AccordionContainer{
-        margin: 0 4%;
-        margin-bottom: 5%;
+        margin: -1% 4%;
+        padding-bottom: 8%;
     }
     .PlusIcon{
         margin-left: 150px;

@@ -96,14 +96,6 @@ const FAQ = () => {
             />
           ))}
         </div>
-        <div className={classes.Socials}>
-          <div>
-            <img src={Discord} alt='Discord' />
-            <img src={Telegram} alt='Telegram' />
-            <img src={Twitter} alt='Twitter' />
-          </div>
-          <div>Join Our Community</div>
-        </div>
       </motion.div>
     </div>
   );

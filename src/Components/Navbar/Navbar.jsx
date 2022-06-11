@@ -18,8 +18,8 @@ const Navbar = () => {
         opacity: [0, 1],
       }}
       transition={{
-        delay: sidebar ? 0 : 8,
-        duration: sidebar ? 0 : 4,
+        delay: sidebar ? 0 : 9,
+        duration: sidebar ? 0 : 3,
         ease: "backInOut",
       }}
       className={classes.Container}>

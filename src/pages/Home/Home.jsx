@@ -2,6 +2,9 @@
 
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Discord from "../../assets/FAQs/Discord.svg";
+import Telegram from "../../assets/FAQs/Telegram.svg";
+import Twitter from "../../assets/FAQs/Twitter.svg";
 import NonAnimatedNavbar from "../../Components/Navbar/NonAnimatedNavbar";
 import TopContainer from "./Components/TopContainer";
 import classes from "./Home.module.css";
@@ -50,9 +53,9 @@ const Home = () => {
         turpis tellus. Nam cursus dapibus convallis. Aenean imperdiet sem ut
         tortor ultrices, id lacinia risus blandit.
       </div>
-      <div className={classes.Footer}>
-        2022 Brahmand by Eros Investments. All Rights Reserved. <br />
-        Documents FAQ
+      <div className={classes.btnGroup}>
+        <button className={classes.litepaper}>Read Litepaper</button>
+        <button className={classes.learnMore}>Learn More</button>
       </div>
     </div>
   );

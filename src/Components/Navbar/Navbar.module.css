@@ -3,7 +3,7 @@
     top:0;
     left: 0;
     width: 100%;
-    background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(26, 41, 64, 0.15) 70%);
+    background: linear-gradient(180deg, rgba(226, 196, 91, 0.53) 0%, rgba(26, 41, 64, 0.15) 80%);
     z-index: 100;
     display: flex;
     padding:2% 20%;
