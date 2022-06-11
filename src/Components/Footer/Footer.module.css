@@ -42,3 +42,10 @@
     margin-left: 10px;
     font-size: 14px;
 }
+
+@media only screen and (max-width:640px) {
+    .Footer{
+        padding: 10% 0;
+        /* display: none; */
+    }
+}

@@ -108,6 +108,8 @@
     display: none;
 }
 
+.PhoneGlobe{display: none;}
+
 @media screen and (max-width:1960px) and (-webkit-min-device-pixel-ratio: 2) {
     .textLayer1 {
         /* display: none; */
@@ -150,12 +152,16 @@
        top:5%;
    }
    .starDust{
-       top: 3.2%;
-       z-index: 50;
-       filter: saturate(130%);
+       display: none;
    }
-   .starDust img {
-        width: 100%;
+   .PhoneGlobe{
+       position: absolute;
+       top:0%;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       z-index: 50;
+       left:0%;
    }
    .BrahmandLogo{
        top:5%;

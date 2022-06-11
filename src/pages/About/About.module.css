@@ -32,16 +32,10 @@
     transform: rotate(-0.22deg);
 }
 
-.subHeading{
-    color: #BAA044;
-    font-family: 'Futura';
-    margin-top: 1%;
-    font-weight: 500;
-    font-size: 40px;
-}
+
 
 .Group{
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     font-weight: 500;
     font-size: 20px;
@@ -166,10 +160,6 @@
     }
     .Heading{
         font-size: 50px;
-    }
-    .subHeading{
-        font-size: 30px;
-        margin-top: 4%;
     }
     .Group{
         margin-top: 4%;

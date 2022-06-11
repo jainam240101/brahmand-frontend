@@ -16,7 +16,7 @@ const Navbar = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
-          opacity: [0, 1],
+          opacity: [0, 0.8],
         }}
         transition={{
           delay: sidebar ? 0 : 9,

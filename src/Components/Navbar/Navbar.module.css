@@ -3,11 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(226, 196, 91, 0.53) 0%,
-    rgba(26, 41, 64, 0.15) 80%
-  );
+  /* background: url("../../assets/Navbar/NavOverlay.svg"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 200;
   display: flex;
   padding: 2% 20%;
@@ -16,9 +15,11 @@
 
 .logo img {
   width: 180px;
+  opacity: 0.8;
 }
 
 .Links {
+  opacity: 0.8;
   display: flex;
 }
 .Links a {

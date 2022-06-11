@@ -67,6 +67,20 @@ const TopContainer = () => {
           duration: 4,
           ease: "easeOut",
         }}
+        className={classes.PhoneGlobe}>
+        <img src={PhoneGlobe} alt='home' />
+      </DivComp>
+      <DivComp
+        initial={{ opacity: 0, y: "-50%" }}
+        animate={{
+          opacity: [0, 1],
+          y: ["-50%", "0%"],
+        }}
+        transition={{
+          delay: 2,
+          duration: 4,
+          ease: "easeOut",
+        }}
         className={classes.starDust}>
         <img src={Stardust} alt='home' />
       </DivComp>

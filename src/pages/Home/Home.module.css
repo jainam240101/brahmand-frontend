@@ -57,6 +57,7 @@
 @media only screen and (max-width:640px){
     .Container{
         padding-top: 20%;
+        width: 100%;
     }
     .heading{
         margin-top: 10%;

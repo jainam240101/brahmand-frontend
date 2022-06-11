@@ -19,7 +19,7 @@ const About = () => {
         }}>
         <div className={classes.HeroSection}>
           <div className={classes.Heading}>BRAHMAND</div>
-          <div className={classes.subHeading}>World's</div>
+          {/* <div className={classes.subHeading}>World's</div> */}
           <div className={classes.Group}>
             <div>Play</div>
             <div>Create</div>
