@@ -1,58 +1,55 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./About.module.css";
 import Line from "../../assets/About/Line.svg";
-import Play from "../../assets/About/Play.svg";
-import Download from "../../assets/About/Download.svg";
 import Compass from "../../assets/About/Compass.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={classes.Container}>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 2,
-        }}>
+        duration: 2,
+        }}> */}
         <div className={classes.HeroSection}>
-          <div className={classes.Heading}>BRAHMAND</div>
-          {/* <div className={classes.subHeading}>World's</div> */}
-          <div className={classes.Group}>
-            <div>Play</div>
-            <div>Create</div>
-            <div>License</div>
-          </div>
+          <div className={classes.Heading}>EXPERIENCE ECONOMY</div>
           <img src={Line} className={classes.Line} alt='Line' />
-          <div className={classes.btnGroup}>
-            <div className={classes.DownloadPaper}>
-              <span>Download Litepaper</span>
-              <img src={Download} className={classes.Download} alt='Download' />
-            </div>
-            <div className={classes.playVideo}>
-              <img src={Play} className={classes.Play} alt='Play' />
-              <span>Play Video</span>
-            </div>
+          <div className={classes.Group}>
+            <div className={classes.play}>PLAY</div>
+            <div>EARN</div>
+            <div className={classes.live}>LIVE</div>
           </div>
         </div>
         <div className={classes.Header}>
-          Pushing the Metaverse forward through{" "}
-          <br className={classes.Breakline} /> collaboration
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
         </div>
-        <div className={classes.Header2}>
-          n scelerisque, tortor eget placerat euismod, mauris sem pretium nulla,
-          vel hendrerit neque ex vitae ipsum. Nam est
-        </div>
-        <div className={classes.IP}>IP</div>
+        <Link to='/network' className={classes.Network}>
+          Network
+        </Link>
         <div className={classes.Compass}>
-          <div className={classes.World}>Our World</div>
+          <Link to='/story' className={classes.Story}>
+            Story
+          </Link>
           <img src={Compass} alt='Compass' />
-          <div className={classes.Network}>Our Network</div>
+          <Link to='/world' className={classes.World}>
+            World
+          </Link>
         </div>
-        <div className={classes.Genesis}>Genesis</div>
-      </motion.div>
+        <Link to='/lokas' className={classes.Lokas}>
+          Lokas
+        </Link>
+      {/* </motion.div> */}
     </div>
   );
 };

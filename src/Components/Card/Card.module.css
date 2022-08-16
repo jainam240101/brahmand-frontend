@@ -1,0 +1,91 @@
+.Container{
+    padding:20px;
+    margin-bottom: 5%;
+    /* margin-right: 5%; */
+    border:4px solid transparent;
+}
+
+.Container:hover{
+    border-width: 4px;
+    border-radius: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #D9AB47, rgba(207, 179, 112, 0.52)) 1;
+}
+
+.Image img{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Black{
+    margin-top: -4px;
+    background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Name{
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFFCC;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 20px;
+    line-height: 18px;
+}
+
+.Designation{
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFFCC;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.bottomPart{
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+}
+
+.Role{
+    border: 1px solid #D6BB75;
+    padding:4px 10px;
+    font-family: 'Mulish';
+    color: #FFFFFFCC;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.Social{
+    display: flex;
+    align-self: center;
+}
+.Social img{
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1680px){
+    .Container{
+        width: 300px;
+        border: 4px solid transparent;
+    }
+    .Image img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .Image img{
+        width: 250px;
+        height: 250px;
+    }
+    .Container:hover{
+        border: none;
+    }
+}

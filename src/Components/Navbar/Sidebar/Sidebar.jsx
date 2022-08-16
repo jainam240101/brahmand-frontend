@@ -3,39 +3,61 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import classes from "./Sidebar.module.css";
+import Cross from "../../../assets/Navbar_Footer/Cross.svg";
+import SidebarLine from "../../../assets/Navbar_Footer/SidebarLine.svg";
 
 function Sidebar({ sideBar, setSideBar }) {
-  console.log(sideBar);
   return (
     <AnimatePresence>
       {sideBar && (
         <>
           <motion.div
-            initial={{ x: "-100%" }}
+            initial={{ x: "100%" }}
             animate={{
-              x: 0,
+              x: "0%",
             }}
             exit={{
-              x: "-100%",
+              x: "150%",
             }}
             transition={{ type: "spring", bounce: 0, duration: 1 }}
             className={classes.Container}>
             <div className={classes.Links}>
               <div onClick={() => setSideBar(false)} className={classes.Close}>
-                +
+                <img src={Cross} alt='Cross' />
               </div>
-              <Link onClick={() => setSideBar(false)}  to='/home'>
+              <div>
+                <img src={SidebarLine} alt='SidebarLine' />
+              </div>
+              <Link onClick={() => setSideBar(false)} to='/home'>
                 <div className={classes.link}>Home</div>
               </Link>
+              <div>
+                <img src={SidebarLine} alt='SidebarLine' />
+              </div>
               <Link onClick={() => setSideBar(false)} to='/about'>
                 <div className={classes.link}>About</div>
               </Link>
-              <Link onClick={() => setSideBar(false)}  to='/documents'>
-                <div className={classes.link}>Documents</div>
+              <div>
+                <img src={SidebarLine} alt='SidebarLine' />
+              </div>
+              <Link onClick={() => setSideBar(false)} to='/docs'>
+                <div className={classes.link}>Docs</div>
               </Link>
-              <Link onClick={() => setSideBar(false)}  to='/faq'>
+              <div>
+                <img src={SidebarLine} alt='SidebarLine' />
+              </div>
+              <Link onClick={() => setSideBar(false)} to='/team'>
+                <div className={classes.link}>Team</div>
+              </Link>
+              <div>
+                <img src={SidebarLine} alt='SidebarLine' />
+              </div>
+              <Link onClick={() => setSideBar(false)} to='/faq'>
                 <div className={classes.link}>FAQ</div>
               </Link>
+              <div>
+                <img src={SidebarLine} alt='SidebarLine' />
+              </div>
             </div>
           </motion.div>
           <motion.div

@@ -1,93 +1,135 @@
 .Container {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1%;
+  left: 0%;
+  z-index: 1;
   width: 100%;
-  /* background: url("../../assets/Navbar/NavOverlay.svg"); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 200;
   display: flex;
-  padding: 2% 20%;
+  align-items: center;
+  padding: 1% 7%;
   justify-content: space-between;
 }
 
-.logo img {
-  width: 180px;
-  opacity: 0.8;
+.Logo {
+  height: 32px;
+  cursor: pointer;
 }
 
-.Links {
-  opacity: 0.8;
+.Logo img {
+  width: 160px;
+  height: 32px;
+  margin-left: 0%;
+}
+
+.Link {
+  /* padding:1% 0; */
   display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: aqua; */
 }
-.Links a {
+.ActiveLink {
+  font-family: "Futura";
+  color: #b89e5c;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px;
+  padding-bottom: 5px;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.InactiveLink {
+  font-family: "Futura";
+  color: #b89e5c;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px;
+  opacity: 0.8;
   text-decoration: none;
 }
 
-.active {
+.HomePageActiveLink {
   font-family: "Futura";
-  color: #e2c45b;
-  border-bottom: 1px solid #e2c45b;
-  margin-left: 25px;
+  color: #b89e5c;
+  font-weight: 400;
   font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: 200;
+  margin-right: 45px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+.HomePageInactiveLink {
+  font-family: "Futura";
+  color: #b89e5c;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 45px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-.inactive {
-  font-family: "Futura";
-  color: #e2c45b;
-  margin-left: 25px;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: 200;
-  text-decoration: none;
-  text-transform: uppercase;
+.Link a:hover {
+  text-decoration: underline;
 }
-.mobileNavbar {
+
+.ComingSoon {
+  width: 149px;
+  height: 35px;
+  font-size: 14px;
+  font-family: "Futura";
+  font-weight: 500;
+  color: #b89e5c;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #b89e5c;
+  opacity: 0.9;
+  border-radius: 4.27402px;
+}
+
+.HamburgerIcon {
   display: none;
 }
 
-@media (max-width: 640px) {
-  .logo {
+/* @media only screen and (min-width: 1280px) and (max-width: 1680px) {
+  .Logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+  }
+
+  .Logo img {
+    width: 64px;
+    height: 10px;
+  }
+} */
+
+@media screen and (max-width: 640px) {
+  .Link {
     display: none;
   }
+
   .Container {
-    padding: 5% 5%;
-    background: linear-gradient(
-      180deg,
-      rgba(226, 196, 91, 0.53) 0%,
-      rgba(26, 41, 64, 0.15) 100%
-    );
+    top: 3%;
+    padding: 0% 5%;
   }
-  .Links {
-    display: none;
-  }
-  .mobileNavbar {
+
+  .Logo {
     display: flex;
-    width: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  .BurgerIcon img {
-    width: 20px;
+
+  .Logo img {
+    /* margin-top: -23%; */
+    width: 100px;
+    height: 100px;
   }
-  .signUpBtn {
-    background: linear-gradient(
-      180deg,
-      #baa044 35.42%,
-      rgba(186, 160, 68, 0.35) 100%
-    );
-    padding: 6px 25px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    font-weight: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+
+  .HamburgerIcon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ComingSoon {
+    display: none;
   }
 }

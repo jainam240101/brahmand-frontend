@@ -1,0 +1,18 @@
+.OuterContainer{
+    background: url("../../assets/Team/Teampage.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.InnerContainer{
+    font-family: "Futura PT";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #E2BC5B;
+}

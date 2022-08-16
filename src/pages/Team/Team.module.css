@@ -1,0 +1,70 @@
+.Container{
+    background: url("../../assets/Team/Teampage.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 9%;
+    padding-bottom: 8%;
+    background-attachment: fixed;
+}
+
+.Heading{
+    font-family: 'Mulish';
+    text-align: center;
+    color: #FFFFFFCC;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.SubText{
+    text-align: center;
+    color: #FFFFFFCC;
+    padding: 0 25%;    
+    font-family: "Futura PT Light";
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0.8;
+}
+.Wedge{
+    display: flex;
+    justify-content: center;
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1680px){
+    .Cards{
+        padding:0 8%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .Container{
+        background: url("../../assets/Team/TeamMobile.png");
+        background-position: center center;
+        background-repeat: repeat-y;
+        background-size: auto;
+        padding: 20% 0;
+        /* height: 100vh; */
+    }
+    .SubText{
+        padding: 0 10%;
+        line-height: 20px;
+        font-size:16px;
+    }
+    .Wedge img{
+        width: 350px;
+    }
+    .Cards{
+        justify-content: center;
+    }
+}
+

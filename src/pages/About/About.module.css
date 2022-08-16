@@ -1,50 +1,62 @@
 .Container{
-    background-color: #1A2940;
-    padding-top: 6%;
+    background: url("../../assets/Team/Teampage.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 9%;
+    padding-bottom: 8%;
+    background-attachment: fixed;
 }
 
 .HeroSection{
    background-image: url("../../assets/About/HeroImage.png");
    background-position: center center; 
+   height:420px;
    background-size: cover;
    background-repeat: no-repeat;
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 5% 0;
+   justify-content: center;
+   /* padding: 5% 0; */
 }
 
 .Heading{
-    font-family: 'Chewer';
-    font-weight: 400;
-    font-size: 60px;
-    font-stretch: extra-ex;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #E4D49B;
-    text-align: center;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #BAA044 0%, rgba(186, 160, 68, 0) 100%);
+    font-family: 'Futura';
+    font-weight: 600;
+    font-size: 45px;
+    background: linear-gradient(180deg, #D6BB75 21.88%, #897031 79.17%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    transform: rotate(-0.22deg);
+    text-align: center;
+    line-height: 120%;
+    letter-spacing: 3px;
 }
 
-
+.play{
+    margin-right: 50px;
+}
+.live{
+    margin-left: 50px;
+}
 
 .Group{
     margin-top: 1%;
     display: flex;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 40px;
     font-family: 'Futura';
-    color:#D8D7D7;
+    color: #C0A054;
+    width: 100%;
+    letter-spacing: 0.1em;
+    justify-content: center;
+    text-transform: capitalize;
+    /* padding: 0 28%; */
 }
 
 .Group div{
-    margin-left:20px;
     opacity: 0.8;
 }
 
@@ -52,66 +64,29 @@
     margin-top: 1%;
 }
 
-.btnGroup{
-    display: flex;
-    color:#D8D7D7;
-    margin-top: 1%;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.DownloadPaper{
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-}
-
-.DownloadPaper span{
-    margin-right: 10px;
-}
-.playVideo span{
-    margin-left: 10px;
-    opacity: 0.8;
-}
-
-.playVideo{
-    margin-left:40px;
-    display: flex;
-    align-items: center;
-}
-
 .Header{
-    font-family: 'Chewer';
-    font-weight: 400;
-    font-size: 25px;
+    font-family: "Futura PT Light";
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
     text-align: center;
+    margin: 0 25%;
     margin-top:3%;
-    color: #D8D7D7;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
-.Header2{
-    margin-top:2%;
-    font-family: 'Futura';
-    color: #D8D7D7;
-    padding:0 30%;
-    opacity: 0.8;
-    text-align: center;
-    font-size: 18px;
-    opacity: 0.8;
-}
-
-.IP{
-    margin-top:5%;
-    margin-left:-1%;
+.Network{
+    margin-top:3%;
     margin-bottom:10px;
-    color:#D8D7D7;
+    color: #B89E5C;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
+    text-decoration: none;
     font-family: 'Futura';
     font-weight: 500;
     font-size: 20px;
-    opacity: 0.8;
 }
 
 .Compass{
@@ -124,30 +99,32 @@
     filter: saturate(120%);
 }
 
-.World{
+.Story{
     margin-right:20px;
-    color:#D8D7D7;
+    color: #B89E5C;
+    opacity: 0.8;
     font-family: 'Futura';
     font-weight: 500;
     font-size: 20px;
-    opacity: 0.8;
+    text-decoration: none;
 }
 
-.Network{
+.World{
     margin-left:20px;
-    color:#D8D7D7;
-    font-family: 'Futura';
+    color: #B89E5C;
     opacity: 0.8;
+    font-family: 'Futura';
+    text-decoration: none;
     font-weight: 500;
     font-size: 20px
 }
 
-.Genesis{
-    color:#D8D7D7;
+.Lokas{
+    color: #B89E5C;
+    opacity: 0.8;
     display: flex;
     margin-top:10px;
-    margin-left:-1%;
-    opacity: 0.8;
+    text-decoration: none;
     justify-content: center;
     font-family: 'Futura';
     font-weight: 500;
@@ -157,44 +134,57 @@
 @media screen and (max-width:640px){
     .Container{
         padding-top: 20%;
+        padding-bottom: 35%;
+    }
+    .play{
+        margin-right: 20px;
+    }
+    .live{
+        margin-left: 20px;
+    }
+    .HeroSection{
+        height: 150px;
     }
     .Heading{
-        font-size: 50px;
-    }
-    .Group{
-        margin-top: 4%;
+        letter-spacing: 2px;
+        font-size: 17px;
+        font-weight: 500;
     }
     .Header{
-        margin-top: 5%;
-        font-size: 20px;
-        line-height: 22px;
+        font-size: 14px;
+        margin:10% 5%;
+        line-height: 20px;
     }
-    .Breakline{
-        display: none;
-    }
-    .Header2{
-        padding: 0 2%;
+    .Group{
+        margin-top: 0%;
         font-size: 16px;
-        margin-top: 5%;
     }
     .Compass img{
         width: 70%;
     }
-    .World{
+    .Story{
         font-size: 14px;
         margin: 5px 0;
         text-align: center;
-        margin-left: 10px;
+        margin-left: 0px;
+        padding-right: 5px;
+    }
+    .World{
+        font-size: 14px;
+        padding-left: 5px;;
+        text-align: center;
+        margin: 5px 0;
     }
     .Network{
         font-size: 14px;
-        text-align: center;
-        margin: 5px 0;
+        margin-bottom: 5px;
     }
-    .IP, .Genesis{
+    .Lokas{
         font-size: 14px;
+        margin-top: 5px;
     }
     .Line{
-        margin: 5% 0;
+        width: 89%;
+        margin: 2% 0;
     }
 }

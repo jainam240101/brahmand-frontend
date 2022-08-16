@@ -1,0 +1,262 @@
+.Container {
+    background: url("../../assets/Team/Teampage.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 7%;
+    padding-bottom: 8%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.NetworkHero{
+    background: url("../../assets/CTAs/Network.png");
+    height: 420px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.WorldHero{
+    background: url("../../assets/CTAs/World.png");
+    height: 450px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.StoryHero{
+    background: url("../../assets/CTAs/Story.png");
+    height: 450px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Heading{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+    color: #B89E5C;
+    margin-top:4%;
+}
+
+.Text{
+    font-family: "Futura PT Light";
+    font-weight: 200;
+    opacity: 0.6;
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    text-align: justify;
+    margin:0 10%;
+    margin-top:2%;
+    letter-spacing: 0.05em;
+}
+
+.OuterContainers{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.Disc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Disc img, .Disc p{
+    cursor: pointer;
+}
+
+.Disc img:hover, .Disc p:hover{
+    filter: contrast(200%);
+}
+
+.ModalContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 200;
+}
+
+.ModalContainer img{
+    width: 50%;
+    height: 50%;
+    filter:saturate(130%);
+}
+
+.Close {
+    position: absolute;
+    z-index: 200;
+    top: 4%;
+    cursor: pointer;
+    font-size: 30px;
+    right: 27%;
+    color: white;
+    transform: rotate(-45deg);
+}
+
+.PhoneLokasContainer,.PhoneOuterContainers,.PhoneModalContainer{
+    display: none;
+}
+
+.ReadMore{
+    display: flex;
+    margin-top: 4%;
+    justify-content: center;
+}
+.ReadMore img{
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.MobileReadMore{
+    display: none;
+}
+
+.Info{
+    margin-top: 2%;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: white;
+    text-align: center;
+    opacity: 0.6;
+}
+
+
+
+@media screen and (max-width:640px){
+    .Container{
+        min-height: 100vh;
+        padding-top:20%;
+        padding-bottom:40%;
+    }
+    .NetworkHero, .WorldHero, .StoryHero{
+        height: 220px;
+    }
+    .Heading{
+        font-size: 25px; 
+        margin: 0 5%;
+        margin-top: 10%;
+    }
+    .Text{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 5%;
+        text-align: justify;
+        margin-top:2%;
+    }
+    .Info{
+        margin:0 10%;
+        margin-top: 5%;
+        font-family: "Futura PT";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        color: white;
+        text-align: center;
+        opacity: 0.8;
+    }
+    .Discs{
+        display: none;
+    }
+    .ModalContainer img{
+        height: 300px;
+        width: 400px;
+    }
+    .ModalContainer{
+        height: auto;
+        width: auto;
+    }
+    .PhoneLokasContainer{
+        height: 60vh;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .PhoneDisc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* background-color: aquamarine; */
+    }
+    .PhoneOuterContainers{
+        position: absolute;
+        top:0%;
+        left:0%;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .PhoneModalContainer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .Close{
+        top:2%;
+        font-size: 25px;
+        right:10%;
+    }
+    .PhoneDisc{
+        margin-top: -5px;
+    }
+    .PhoneModalContainer img{
+        width: 90%;
+        height: 100%;
+        /* display: flex;
+        justify-content: center; */
+    }
+    .ReadMore{
+        display: none;
+    }
+    .MobileReadMore{
+        font-family: "Futura";
+        text-decoration: underline;
+        font-size:14px;
+        display: flex;
+        justify-content: center;
+        color: #B89E5C;
+    }
+}
+
+
+
+.LokaText{
+    position: absolute;
+    font-size: 10px;
+    color:#4BDCD3;
+    font-family: "Futura";
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 1.6902680397033691px;
+    text-align: left;
+}
+

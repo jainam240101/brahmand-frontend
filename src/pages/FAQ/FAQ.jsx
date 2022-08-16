@@ -1,16 +1,17 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./FAQ.module.css";
 import PlusIcon from "../../assets/FAQs/Plus.svg";
 import Minus from "../../assets/FAQs/Minus.svg";
 import Clip from "../../assets/FAQs/Clip.svg";
-import Discord from "../../assets/FAQs/Discord.svg";
-import Telegram from "../../assets/FAQs/Telegram.svg";
-import Twitter from "../../assets/FAQs/Twitter.svg";
 import { motion } from "framer-motion";
 
 const FAQ = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const data = [
     {
       question: "What is Bramhand?",
@@ -80,23 +81,23 @@ const FAQ = () => {
   ];
   return (
     <div className={classes.Container}>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
           duration: 1,
-        }}>
-        <div className={classes.Heading}>FAQS</div>
-        <div className={classes.AccordionElements}>
-          {data.map((element, index) => (
-            <Accordion
-              key={index}
-              answer={element.answer}
-              question={element.question}
-            />
-          ))}
-        </div>
-      </motion.div>
+        }}> */}
+      <div className={classes.Heading}>FAQs</div>
+      <div className={classes.AccordionElements}>
+        {data.map((element, index) => (
+          <Accordion
+            key={index}
+            answer={element.answer}
+            question={element.question}
+          />
+        ))}
+      </div>
+      {/* </motion.div> */}
     </div>
   );
 };
@@ -106,7 +107,13 @@ export default FAQ;
 const Accordion = ({ question, answer }) => {
   const [showAnswer, setshowAnswer] = useState(false);
   return (
-    <div className={classes.AccordionContainer}>
+    <motion.div
+      className={classes.AccordionContainer}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 2,
+      }}>
       <div className={classes.topPart}>
         <div className={classes.Question}>
           {showAnswer && <img src={Clip} alt='Clip' />}
@@ -118,12 +125,14 @@ const Accordion = ({ question, answer }) => {
               onClick={() => setshowAnswer(!showAnswer)}
               src={Minus}
               alt='Minus'
+              draggable={false}
             />
           ) : (
             <img
               onClick={() => setshowAnswer(!showAnswer)}
               src={PlusIcon}
               alt='PlusIcon'
+              draggable={false}
             />
           )}
         </div>
@@ -138,6 +147,6 @@ const Accordion = ({ question, answer }) => {
           {answer}
         </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 };

@@ -1,46 +1,61 @@
 .HeroSection {
-  background-color: #1a2940;
-  position: relative;
-  min-height: 100vh;
+    background-color: #1a2940;
+    position: relative;
+    min-height: 100vh;
 }
 
 .Home {
-  background: url("../../assets/LandingPage/LandingPage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    background: url("../../assets/LandingPage/LandingPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Logo {
-  margin-top: 7%;
-  /* filter: saturate(150%); */
+    margin-top: 7%;
+    filter: saturate(150%);
 }
 
 .enterbtn {
-  margin-top: 3%;
-  border:0;
-  opacity: 0.8;
-  background: none;
-  cursor: pointer;
+    margin-top: 3%;
+    border: 0;
+    opacity: 0.8;
+    background: none;
+    cursor: pointer;
+}
+.enterbtn img{
+    filter: saturate(150%);
+    
 }
 
 .socials {
-  margin-top: 3%;
-  display: flex;
-  justify-content: space-between;
-  width: 13%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
 }
 
 .socials img {
-  width: 30px;
+    width: 30px;
 }
 
-@media only screen and (max-width:640px){
-  
+@media screen and (max-width:640px){
+    .Logo{
+        margin-top: 10%;
+        width: 350px;
+        /* height: 250px; */
+    }
+    .enterbtn img{
+        margin-top: 7%;
+        width: 194px;
+    }
+    .Home{
+        background-position: left center;
+    }
 }

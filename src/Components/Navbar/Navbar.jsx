@@ -1,80 +1,89 @@
 /** @format */
 
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import Logo from "../../assets/Navbar/Logo.svg";
+import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
-import { motion } from "framer-motion";
+import Logo from "../../assets/Navbar_Footer/Logo.svg";
+import { Link, useLocation } from "react-router-dom";
+import Hamburger from "../../assets/Navbar_Footer/Hamburger.svg";
 import Sidebar from "./Sidebar/Sidebar";
-import Hamburger from "../../assets/Navbar/Hamburger.svg";
 
-const Navbar = () => {
-  const [sidebar, setsidebar] = useState(false);
+const Navbar = ({ imageShow }) => {
   const { pathname } = useLocation();
+  const [sidebar, setsidebar] = useState(false);
+  const [path, setpath] = useState("");
+  const [buttonText, setbuttonText] = useState("Play Now");
+  useEffect(() => {
+    setpath(pathname.split("/")[1]);
+  }, []);
+  const HoverButton = () => {
+    if (buttonText === "Play Now") {
+      setbuttonText("Coming Soon");
+    }
+    if (buttonText === "Coming Soon") {
+      setbuttonText("Play Now");
+    }
+  };
   return (
-    <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: [0, 0.8],
-        }}
-        transition={{
-          delay: sidebar ? 0 : 9,
-          duration: sidebar ? 0 : 3,
-          ease: "backInOut",
-        }}
-        className={classes.Container}
-      >
-        <Link to="/home" className={classes.logo}>
-          <img src={Logo} alt="Logo" />
+    <div className={classes.Container}>
+      {imageShow && (
+        <Link to='/home' className={classes.Logo}>
+          <img src={Logo} alt='Logo' />
         </Link>
-        <div className={classes.Links}>
-          <Link to="/home">
-            <div
-              className={
-                pathname === "/home" ? classes.active : classes.inactive
-              }
-            >
-              Home
-            </div>
-          </Link>
-          <Link to="/about">
-            <div
-              className={
-                pathname === "/about" ? classes.active : classes.inactive
-              }
-            >
-              About
-            </div>
-          </Link>
-          <Link to="/documents">
-            <div
-              className={
-                pathname === "/documents" ? classes.active : classes.inactive
-              }
-            >
-              Documents
-            </div>
-          </Link>
-          <Link to="/faq">
-            <div
-              className={
-                pathname === "/faq" ? classes.active : classes.inactive
-              }
-            >
-              FAQ
-            </div>
-          </Link>
-        </div>
-        <div className={classes.mobileNavbar}>
-          <div onClick={() => setsidebar(true)} className={classes.BurgerIcon}>
-            <img src={Hamburger} alt="Hamburger" />
-          </div>
-          <button className={classes.signUpBtn}>Sign Up</button>
-        </div>
-      </motion.div>
+      )}
+      <div className={classes.Link}>
+        <Link
+          state={{ animate: false }}
+          onClick={() => setpath("home")}
+          className={
+            path === "home" ? classes.ActiveLink : classes.InactiveLink
+          }
+          to='/home'>
+          HOME
+        </Link>
+        <Link
+          onClick={() => setpath("about")}
+          className={
+            path === "about" ? classes.ActiveLink : classes.InactiveLink
+          }
+          to='/about'>
+          ABOUT
+        </Link>
+        <Link
+          onClick={() => setpath("docs")}
+          className={
+            path === "docs" ? classes.ActiveLink : classes.InactiveLink
+          }
+          to='/docs'>
+          DOCS
+        </Link>
+        <Link
+          onClick={() => setpath("team")}
+          className={
+            path === "team" ? classes.ActiveLink : classes.InactiveLink
+          }
+          to='/team'>
+          TEAM
+        </Link>
+        <Link
+          onClick={() => setpath("faq")}
+          className={path === "faq" ? classes.ActiveLink : classes.InactiveLink}
+          to='/faq'>
+          FAQ
+        </Link>
+      </div>
+      {imageShow && (
+        <button
+          onMouseEnter={HoverButton}
+          onMouseLeave={HoverButton}
+          className={classes.ComingSoon}>
+          {buttonText}
+        </button>
+      )}
+      <div onClick={() => setsidebar(true)} className={classes.HamburgerIcon}>
+        <img src={Hamburger} alt='Hamburger' />
+      </div>
       <Sidebar sideBar={sidebar} setSideBar={setsidebar} />
-    </>
+    </div>
   );
 };
 

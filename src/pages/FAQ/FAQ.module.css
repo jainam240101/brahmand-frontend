@@ -1,89 +1,99 @@
-.Container{
-    background: #1A2940;
-    padding-top: 10%;
+.Container {
+  background: url("../../assets/Team/Teampage.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+  /* filter: brightness(190%); */
+  padding-bottom: 8%;
+  background-attachment: fixed;
 }
 
-.Heading{
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    color: #BAA044;
+.Heading {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  color: #cfb370;
 }
 
-.Flex{
-    display: flex;
-    align-items: center;
+.Flex {
+  display: flex;
+  align-items: center;
 }
 
-.Socials{
-    text-align: center;
+.Socials {
+  text-align: center;
 }
 
-.Socials div img{
-    margin-right:25px;
-}
-.Socials div{
-    font-family: 'Futura';
-    font-weight: 500;
-    font-size: 20px;
-    padding-top:15px;
-    color: #BAA044BF;
+.Socials div img {
+  margin-right: 25px;
 }
 
-.AccordionElements{
-    margin-top:3%;   
+.Socials div {
+  font-family: "Futura";
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 15px;
+  color: #baa044bf;
 }
 
-.AccordionContainer{
-    margin:0 27%;
-    font-family: 'Futura';
-    font-weight: 500;
-    color: #D8D7D7;
-    padding-bottom: 2%;
-}
-.topPart{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.Question{
-    opacity: 0.8;
-    display: flex;
-    font-size: 18px;
-    align-items: center;
-}
-.Question div{
-    margin-left: 20px;
-}
-.PlusIcon{
-    margin-left:200px;
-    cursor: pointer;
+.AccordionElements {
+  margin-top: 3%;
 }
 
-.Answer{
-    opacity: 0.8;
-    margin-top:3%;
-    margin-left:7%;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 16px;
+.AccordionContainer {
+  margin: 0 27%;
+  font-family: "Futura";
+  font-weight: 500;
+  color: #d8d7d7;
+  padding-bottom: 2%;
 }
 
-@media screen and (max-width:640px) {
-    .Container{
-        padding-top: 25%;
-    }
-    .AccordionElements{
-        margin-top: 8%;
-    }
-    .AccordionContainer{
-        margin: -1% 4%;
-        padding-bottom: 8%;
-    }
-    .PlusIcon{
-        margin-left: 150px;
-    }
+.topPart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Question {
+  flex: 1;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  align-items: center;
+}
+
+.Question div {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.Answer {
+  opacity: 0.8;
+  margin-top: 3%;
+  margin-left: 7%;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 640px) {
+  .Container {
+    padding: 25% 0;
+    background-attachment: fixed;
+  }
+
+  .AccordionElements {
+    margin-top: 8%;
+  }
+
+  .AccordionContainer {
+    margin: -1% 4%;
+    padding-bottom: 8%;
+  }
 }
