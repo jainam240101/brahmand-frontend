@@ -6,9 +6,11 @@ import Logo from "../../assets/Navbar_Footer/Logo.svg";
 import { Link, useLocation } from "react-router-dom";
 import Hamburger from "../../assets/Navbar_Footer/Hamburger.svg";
 import Sidebar from "./Sidebar/Sidebar";
+import DownArrow from "../../assets/Navbar_Footer/Down Arrow.svg";
 
 const Navbar = ({ imageShow }) => {
   const { pathname } = useLocation();
+  const [showList, setshowList] = useState(false);
   const [sidebar, setsidebar] = useState(false);
   const [path, setpath] = useState("");
   const [buttonText, setbuttonText] = useState("Play Now");
@@ -23,6 +25,11 @@ const Navbar = ({ imageShow }) => {
       setbuttonText("Play Now");
     }
   };
+
+  const shiftShowList = () => {
+    setshowList(!showList);
+  };
+
   return (
     <div className={classes.Container}>
       {imageShow && (
@@ -48,14 +55,42 @@ const Navbar = ({ imageShow }) => {
           to='/about'>
           ABOUT
         </Link>
-        <Link
-          onClick={() => setpath("docs")}
-          className={
-            path === "docs" ? classes.ActiveLink : classes.InactiveLink
-          }
-          to='/docs'>
-          DOCS
-        </Link>
+        <div className={classes.Column}>
+          <Link
+            onClick={() => setpath("docs")}
+            className={
+              path === "docs" ? classes.ActiveLink : classes.InactiveLink
+            }
+            to='/docs'>
+            DOCS
+            <img
+              onMouseEnter={shiftShowList}
+              onMouseLeave={shiftShowList}
+              className={classes.DownArrow}
+              src={DownArrow}
+              alt='DownArrow'
+            />
+          </Link>
+          {showList && (
+            <div
+              onMouseEnter={() => setshowList(true)}
+              onMouseLeave={() => setshowList(false)}
+              className={classes.List}>
+              <Link to='/docs/#litepaper' className={classes.Item}>
+                <div className={classes.Dot} />
+                <div className={classes.Text}>Litepaper</div>
+              </Link>
+              <Link to='/docs/#gaming_economics' className={classes.Item}>
+                <div className={classes.Dot} />
+                <div className={classes.Text}>Gaming Economics</div>
+              </Link>
+              <Link to='/docs/#video' className={classes.Item}>
+                <div className={classes.Dot} />
+                <div className={classes.Text}>Video</div>
+              </Link>
+            </div>
+          )}
+        </div>
         <Link
           onClick={() => setpath("team")}
           className={
